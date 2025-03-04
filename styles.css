@@ -33,12 +33,13 @@ body{
 }
 .nav-link{
   /* border: 1px solid #fff; */
+  color: #F1E4C3;
   border-radius: 10px;
 cursor: pointer;
 }
 
 .nav-link:hover {
-  background-color: black;
+  background-color: greenyellow;
 }
 
 .logo{
