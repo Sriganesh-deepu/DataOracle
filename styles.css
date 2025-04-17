@@ -1,6 +1,14 @@
-body{
+html{
+  height: 100%;
+  margin: 0%;
+}
 
+
+body{
+  height: 100%; /* Ensure the body and HTML take up the full height of the viewport */
+  margin: 0; /* Remove default margin */
   background-size: cover;
+  background-color: white;
 
 }
 
@@ -15,19 +23,22 @@ body{
 }
 
 .main-picture{
-  width: 30rem;
-  height: 25rem;
-  margin: 20px 125px 10px;
+  width: 210%;
+  height: 20rem;
+  /* margin: 20px 125px 10px; */
 
 }
 
 .navbar{
+
   height: 40px;
   background-color: black;
 }
 
 .nav-item{
-  font-size: 80%;
+  
+  font-weight: bold;
+  font-size: 90%;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -39,9 +50,54 @@ cursor: pointer;
 }
 
 .nav-link:hover {
-  background-color: greenyellow;
+  /* background-color: black;*/
+  color: green
 }
 
 .logo{
   margin-left: -75px;
+  color: yellowgreen;
+  
+}
+.Main_picture{
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  height: 100vh; /* Full height of the viewport */
+  padding: 0 10px; /* Add some padding to prevent image overflow on smaller screens */
+  box-sizing: border-box; /* Ensure padding doesn't affect the container size */
+}
+
+  /* width: 110%;
+  height: 20rem;
+  border: 1px solid #f8f8f6;
+  border-top: 0px;
+  padding: 2px;
+  border-radius: 10px;
+   */
+  /* margin: 20px 125px 10px; */
+  .Banner {
+    width: 100%; /* Make the image responsive */
+    max-width: 100%; /* Prevent the image from being larger than the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container without stretching */
+  }
+
+  @media (max-width: 600px) {
+    .Main_picture {
+      height: auto; /* Adjust the container height for smaller screens */
+    }
+
+    .Banner {
+      width: 100%; /* Ensure the image takes full width on smaller screens */
+    }
+  }
+iframe{ position: relative;
+  left: 200px;
+}
+.End_Container{
+  float: clear;
+  width: 100%;
+  background-color: black;
+  color: green;
 }
